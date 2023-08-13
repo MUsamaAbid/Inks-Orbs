@@ -2,17 +2,17 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-InkandOrb-Unity/[Ll]ibrary/
-InkandOrb-Unity/[Tt]emp/
-InkandOrb-Unity/[Oo]bj/
-InkandOrb-Unity/[Bb]uild/
-InkandOrb-Unity/[Bb]uilds/
-InkandOrb-Unity/[Ll]ogs/
-InkandOrb-Unity/[Uu]ser[Ss]ettings/
-InkandOrb-Unity/Assets/
-InkandOrb-Unity/InksAndOrbs_BackUpThisFolder_ButDontShipItWithYourGame/
-InkandOrb-Unity/InksAndOrbs_BurstDebugInformation_DoNotShip/
-InkandOrb-Unity/ProjectSettings/
+InksAndOrbs/[Ll]ibrary/
+InksAndOrbs/[Tt]emp/
+InksAndOrbs/[Oo]bj/
+InksAndOrbs/[Bb]uild/
+InksAndOrbs/[Bb]uilds/
+InksAndOrbs/[Ll]ogs/
+InksAndOrbs/[Uu]ser[Ss]ettings/
+InksAndOrbs/Assets/
+InksAndOrbs/InksAndOrbs_BackUpThisFolder_ButDontShipItWithYourGame/
+InksAndOrbs/InksAndOrbs_BurstDebugInformation_DoNotShip/
+InksAndOrbs/ProjectSettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
