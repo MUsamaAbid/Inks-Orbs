@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "147975183536",
+    "project_id": "ink-and-orb",
+    "storage_bucket": "ink-and-orb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147975183536:android:6bad8d16ffbb0737d32f75",
+        "android_client_info": {
+          "package_name": "com.inkandorbs.productions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUtOx2yZfkNCOHIaESHOFynjA2_rOUmbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

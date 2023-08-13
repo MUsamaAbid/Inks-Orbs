@@ -9,8 +9,18 @@ InksAndOrbs/[Bb]uild/
 InksAndOrbs/[Bb]uilds/
 InksAndOrbs/[Ll]ogs/
 InksAndOrbs/[Uu]ser[Ss]ettings/
-InksAndOrbs/Assets/
-InksAndOrbs/InksAndOrbs_BackUpThisFolder_ButDontShipItWithYourGame/
+InksAndOrbs/Assets/Firebase/
+InksAndOrbs/Assets/Animations/
+InksAndOrbs/Assets/CactusPack/
+InksAndOrbs/Assets/Materials/
+InksAndOrbs/Assets/Models/
+InksAndOrbs/Assets/Prefabs/
+InksAndOrbs/Assets/Plugins/
+InksAndOrbs/Assets/Textures/
+InksAndOrbs/Assets/TutorialInfo/
+InksAndOrbs/Assets/Scenes/
+InksAndOrbs/Assets/Audio/
+InksAndOrbs/Assets/Scripts/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
