@@ -1,0 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
+using OcularInk.Utils;
+using UnityEngine;
+
+public class PushNotifications : Singleton<PushNotifications>
+{
+    protected override void Awake()
+    {
+        base.Awake();
+        Firebase.Messaging.FirebaseMessaging.TokenReceived += OnTokenReceived;
+        Firebase.Messaging.FirebaseMessaging.MessageReceived += OnMessageReceived;
+    }
+
+    public void OnTokenReceived(object sender, Firebase.Messaging.TokenReceivedEventArgs token)
+    {
+        UnityEngine.Debug.Log("Received Registration Token: " + token.Token);
+    }
+
+    public void OnMessageReceived(object sender, Firebase.Messaging.MessageReceivedEventArgs e)
+    {
+        UnityEngine.Debug.Log("Received a new message from: " + e.Message.From);
+    }
+}
