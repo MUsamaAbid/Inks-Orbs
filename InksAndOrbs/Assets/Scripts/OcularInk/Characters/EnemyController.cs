@@ -105,8 +105,11 @@ namespace OcularInk.Characters
             {
                 if (collision.relativeVelocity.magnitude < 8f)
                     return;
-                
-                TakeDamage(Mathf.Round(3 + collision.relativeVelocity.magnitude));
+
+                TakeDamage(Mathf.Round(3 + collision.relativeVelocity.magnitude));//Old
+                //TakeDamage(Mathf.Round(2 * collision.relativeVelocity.magnitude));//New
+
+                Debug.Log("Damage given: " + Mathf.Round(3 + collision.relativeVelocity.magnitude).ToString());
             }
         }
 

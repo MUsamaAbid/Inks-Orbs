@@ -56,6 +56,7 @@ namespace OcularInk.Characters
 
         public virtual void TakeDamage(float damage)
         {
+            //damage = 51; //New
             Animator.SetTrigger("Hurt");
             Health -= damage;
 
