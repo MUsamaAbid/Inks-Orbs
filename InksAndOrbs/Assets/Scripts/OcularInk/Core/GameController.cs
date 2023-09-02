@@ -10,7 +10,8 @@ public class GameController : MonoBehaviour
     public int CollectedMoney { get; private set; }
     public int Score { get; private set; }
     public float Playtime { get; private set; }
-    
+
+    [SerializeField] private GameObject GameFinishPoint;
     [SerializeField] private HealthChangeText hct;
     [SerializeField] private GameCanvas gameCanvas;
     [SerializeField] private GameplayCameraController gameplayCameraController;
@@ -173,5 +174,12 @@ public class GameController : MonoBehaviour
         Score += amount;
 
         Debug.Log($"Score: {Score}");
+    }
+
+    public void SpawnFinishPoint(Vector3 position)
+    {
+        Debug.Log("Spawning Finish Point");
+        GameObject finishPoint = Instantiate(GameFinishPoint);
+        finishPoint.transform.position = position;
     }
 }
