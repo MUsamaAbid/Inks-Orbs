@@ -7427,8 +7427,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 289870501}
   - {fileID: 659260134}
+  - {fileID: 289870501}
   - {fileID: 1568828011}
   - {fileID: 2066809525}
   - {fileID: 1701741381}
@@ -7442,6 +7442,7 @@ Transform:
   - {fileID: 2013218123}
   - {fileID: 73825019}
   - {fileID: 182156725}
+  - {fileID: 1619007210}
   - {fileID: 1469995103}
   - {fileID: 1717866123}
   - {fileID: 1177545499}
@@ -7456,7 +7457,6 @@ Transform:
   - {fileID: 1313795138}
   - {fileID: 811998052}
   - {fileID: 4208050}
-  - {fileID: 1619007210}
   - {fileID: 1037154547}
   - {fileID: 1530925893}
   - {fileID: 1495307669}
@@ -39368,6 +39368,11 @@ PrefabInstance:
       propertyPath: gameCanvas
       value: 
       objectReference: {fileID: 1972110494}
+    - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
+        type: 3}
+      propertyPath: GameFinishPoint
+      value: 
+      objectReference: {fileID: 917365693}
     - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
         type: 3}
       propertyPath: gameplayCameraController

@@ -7924,41 +7924,41 @@ Transform:
   m_Children:
   - {fileID: 1963050873}
   - {fileID: 1674875872}
+  - {fileID: 1095994071}
   - {fileID: 239274821}
   - {fileID: 313646172}
   - {fileID: 1068093448}
   - {fileID: 348023934}
-  - {fileID: 1961618176}
-  - {fileID: 1095994071}
-  - {fileID: 1634807774}
-  - {fileID: 664946167}
   - {fileID: 1918524175}
-  - {fileID: 858829340}
+  - {fileID: 1961618176}
+  - {fileID: 1634807774}
   - {fileID: 727477288}
+  - {fileID: 664946167}
+  - {fileID: 1245764261}
+  - {fileID: 858829340}
+  - {fileID: 1194839327}
   - {fileID: 1904624332}
+  - {fileID: 1078581099}
   - {fileID: 55056184}
+  - {fileID: 1677298787}
   - {fileID: 1325262953}
   - {fileID: 870158660}
   - {fileID: 1292381118}
+  - {fileID: 2007646159}
   - {fileID: 772570767}
-  - {fileID: 684368611}
   - {fileID: 1755638986}
+  - {fileID: 684368611}
+  - {fileID: 1578739620}
+  - {fileID: 16838877}
   - {fileID: 1717077488}
-  - {fileID: 1194839327}
   - {fileID: 1918501886}
-  - {fileID: 1078581099}
   - {fileID: 1409177098}
   - {fileID: 1495111857}
   - {fileID: 1695212900}
-  - {fileID: 1578739620}
   - {fileID: 1644085092}
-  - {fileID: 2007646159}
-  - {fileID: 1245764261}
   - {fileID: 535551713}
   - {fileID: 623275157}
-  - {fileID: 1677298787}
   - {fileID: 600590594}
-  - {fileID: 16838877}
   m_Father: {fileID: 2082920586}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -40734,6 +40734,11 @@ PrefabInstance:
       propertyPath: gameCanvas
       value: 
       objectReference: {fileID: 1972110494}
+    - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
+        type: 3}
+      propertyPath: GameFinishPoint
+      value: 
+      objectReference: {fileID: 917365693}
     - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
         type: 3}
       propertyPath: gameplayCameraController

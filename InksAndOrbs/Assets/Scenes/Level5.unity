@@ -18325,6 +18325,11 @@ PrefabInstance:
       objectReference: {fileID: 1972110494}
     - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
         type: 3}
+      propertyPath: GameFinishPoint
+      value: 
+      objectReference: {fileID: 917365693}
+    - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
+        type: 3}
       propertyPath: gameplayCameraController
       value: 
       objectReference: {fileID: 1135804295}

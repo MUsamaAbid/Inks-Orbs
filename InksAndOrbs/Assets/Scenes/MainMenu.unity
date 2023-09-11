@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5683,6 +5683,41 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8452679434847642393, guid: 1895884961022c149be28f98ab609495,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452679434847642393, guid: 1895884961022c149be28f98ab609495,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452679434847642393, guid: 1895884961022c149be28f98ab609495,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1195800564}
+    - target: {fileID: 8452679434847642393, guid: 1895884961022c149be28f98ab609495,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452679434847642393, guid: 1895884961022c149be28f98ab609495,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452679434847642393, guid: 1895884961022c149be28f98ab609495,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: HomeCanvas, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452679434847642393, guid: 1895884961022c149be28f98ab609495,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8452679434847642394, guid: 1895884961022c149be28f98ab609495,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -6225,7 +6260,7 @@ PrefabInstance:
     - target: {fileID: 3360506476084149356, guid: 8f8b2fab8d31dec41acd109279ad8f9b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3449.545
+      value: 3631.0999
       objectReference: {fileID: 0}
     - target: {fileID: 3442646824964022030, guid: 8f8b2fab8d31dec41acd109279ad8f9b,
         type: 3}
