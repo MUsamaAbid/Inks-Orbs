@@ -35,7 +35,7 @@ public class HomeCanvas : CanvasController
             signInButton.SetActive(false);
             return;
         }
-
+        
 #if !UNITY_EDITOR
         SignIn();
 #endif
@@ -128,7 +128,8 @@ public class HomeCanvas : CanvasController
 
     public void SignIn()
     {
-        AlertManager.Instance.ShowAlert("SIGNING IN", "Please wait...", false);
-        AuthService.Instance.SignIn();
+        //Usama commented
+        //AlertManager.Instance.ShowAlert("SIGNING IN", "Please wait...", false);
+        //AuthService.Instance.SignIn();
     }
 }

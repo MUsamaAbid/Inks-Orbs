@@ -30,6 +30,7 @@ public class AuthService : Singleton<AuthService>
 
     public void SignIn()
     {
+        //Commented usama
         #if UNITY_ANDROID
         SignInWithGooglePlay();
         #elif UNITY_IOS
