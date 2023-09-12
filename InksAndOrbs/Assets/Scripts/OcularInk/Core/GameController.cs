@@ -114,7 +114,12 @@ public class GameController : MonoBehaviour
         GameManager.GameData.Money += CollectedMoney;
         GameManager.GameData.NextLevel();
         DataManager.Save();
-
+        if(GameManager.GameData.CurrentLevel % 4 == 0)
+        {
+            Debug.Log("Increase HealthBar");
+            gameCanvas.IncreaseHealthBar();
+        }
+        
         var playtimeScore = Mathf.RoundToInt(Mathf.Max(0, (600 - Playtime) * 10f));
         IncreaseScore(playtimeScore);
         

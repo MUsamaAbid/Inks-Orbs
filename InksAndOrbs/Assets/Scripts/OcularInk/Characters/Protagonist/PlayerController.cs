@@ -29,7 +29,6 @@ namespace OcularInk.Characters.Protagonist
         private float inputY;
 
         private float lastMoveTime;
-        
         public static bool ForceDisable;
 
         // Start is called before the first frame update
@@ -163,7 +162,6 @@ namespace OcularInk.Characters.Protagonist
             
             GameManager.Instance.GameController.SetHealth(health / baseHealth);
         }
-
         public void ToggleSpeedBonus(bool value)
         {
             if (value)

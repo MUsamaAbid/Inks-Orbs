@@ -79236,6 +79236,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1449336880922340721, guid: 6d5b90cb4348c0c4baa44dc13171e56c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1584420169694049313, guid: 6d5b90cb4348c0c4baa44dc13171e56c,
         type: 3}
       propertyPath: selectMarker

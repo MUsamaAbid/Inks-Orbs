@@ -101,4 +101,8 @@ public class GameCanvas : CanvasController
     {
         debugLabel.text = text;
     }
+    public void IncreaseHealthBar()
+    {
+        healthBar.rectTransform.sizeDelta = new Vector2(healthBar.rectTransform.rect.width+100, healthBar.rectTransform.rect.height);
+    }
 }
