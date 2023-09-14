@@ -101,8 +101,9 @@ public class GameCanvas : CanvasController
     {
         debugLabel.text = text;
     }
-    public void IncreaseHealthBar()
+    public void IncreaseHealthBar(int health)
     {
-        healthBar.rectTransform.sizeDelta = new Vector2(healthBar.rectTransform.rect.width+100, healthBar.rectTransform.rect.height);
+        Debug.Log("extra raise by: " + health);
+        healthBar.rectTransform.sizeDelta = new Vector2(healthBar.rectTransform.rect.width+100 * health, healthBar.rectTransform.rect.height);
     }
 }

@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("current level: " + GameManager.GameData.CurrentLevel);
         Time.timeScale = 1;
         Application.targetFrameRate = 60;
         GameManager.Instance.GameController = this;
@@ -116,8 +117,9 @@ public class GameController : MonoBehaviour
         DataManager.Save();
         if(GameManager.GameData.CurrentLevel % 4 == 0)
         {
+            int extraHealth = GameManager.GameData.CurrentLevel / 4;
             Debug.Log("Increase HealthBar");
-            gameCanvas.IncreaseHealthBar();
+            gameCanvas.IncreaseHealthBar(extraHealth);
         }
         
         var playtimeScore = Mathf.RoundToInt(Mathf.Max(0, (600 - Playtime) * 10f));

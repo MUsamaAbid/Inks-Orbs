@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class HealthPickup : PickupObject
 {
-    [SerializeField] private float healAmount = 5f;
+    [SerializeField] private float healAmount = 10f; //5f;
     public override void OnHit(Collider other)
     {
         base.OnHit(other);

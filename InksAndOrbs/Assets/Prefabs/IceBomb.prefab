@@ -44,8 +44,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Radius: 5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 6.5
+  m_Center: {x: 0, y: 1.4465199, z: 0}
 --- !u!114 &2778863947857301153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   forceMultiplier: 25
   explosionParticle: {fileID: 3236601327093289170}
   explosionArea: {fileID: 2778863947857301153}
-  damageMultiplier: 1.25
+  damageMultiplier: 2
 --- !u!64 &1636461299027265062
 MeshCollider:
   m_ObjectHideFlags: 0

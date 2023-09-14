@@ -98,7 +98,7 @@ public class MiniDevilController : EnemyAI
     protected override void Die()
     {
         AudioManager.Instance.PlayAudio("BossDying");
-        if(GameManager.Instance.LevelController.level == 1)
+        if(GameManager.GameData.CurrentLevel == 1)
             GameManager.Instance.GameController.SpawnFinishPoint(this.transform.position);
         base.Die();
     }
