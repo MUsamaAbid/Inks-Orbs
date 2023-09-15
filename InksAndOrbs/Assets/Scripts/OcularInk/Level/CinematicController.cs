@@ -42,6 +42,7 @@ public class CinematicController : MonoBehaviour
 
     public void PlayLine(int index)
     {
+        Debug.Log("Play Line Index");
         if (index > activeCinematic.lines.Length - 1)
         {
             Debug.LogError("Failed to play line, reason: Index out of bounds");
