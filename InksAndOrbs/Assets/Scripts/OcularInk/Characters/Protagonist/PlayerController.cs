@@ -49,6 +49,8 @@ namespace OcularInk.Characters.Protagonist
             AttractItems();
             MovePlayer();
             RotatePlayer();
+
+            
         }
 
         private void MovePlayer()

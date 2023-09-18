@@ -4781,6 +4781,7 @@ GameObject:
   - component: {fileID: 3342906914645647001}
   - component: {fileID: 3342906914645646982}
   - component: {fileID: 3342906914645647002}
+  - component: {fileID: 981069892781686253}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -4858,7 +4859,30 @@ MonoBehaviour:
   speedParticle: {fileID: 6899531950633781486}
   shieldParticle: {fileID: 8159984621022685077}
   immunityParticle: {fileID: 1146749664978573985}
+  shieldPower: {fileID: 0}
+  immunityPower: {fileID: 0}
+  speedPower: {fileID: 0}
   preventAttacks: 0
+--- !u!95 &981069892781686253
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2496416898214350803}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &3961706417743510605
 GameObject:
   m_ObjectHideFlags: 0

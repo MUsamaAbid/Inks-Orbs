@@ -17,7 +17,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameplayCameraController gameplayCameraController;
     [SerializeField] private CinematicController cinematicController;
     [SerializeField] private ObjectPool brushAreaPool;
-    
+    [SerializeField] private CutsceneManager cutsceneManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,10 +35,11 @@ public class GameController : MonoBehaviour
         
         GameManager.SetGameState(GameState.Playing);
 
-        if (GameManager.Instance.LevelController.level == 0 && PlayerPrefs.GetInt("first_cinematic", 0) == 0)
+        if (GameManager.Instance.LevelController.level == 0 && PlayerPrefs.GetInt("first_cinematic", 0) == 0 )
         {
             cinematicController.ShowCinematic(1);
             PlayerPrefs.SetInt("first_cinematic", 1);
+            
         }
 
 #if !UNITY_EDITOR
