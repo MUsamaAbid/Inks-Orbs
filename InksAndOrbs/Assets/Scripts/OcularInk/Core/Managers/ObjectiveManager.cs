@@ -14,7 +14,8 @@ public class ObjectiveManager : MonoBehaviour
     {
         foreach (var allyController in allies)
         {
-            allyController.SetDestination(objectiveList[0].objectiveArea.position);
+            if(allyController.isActiveAndEnabled)
+                allyController.SetDestination(objectiveList[0].objectiveArea.position);
         }
     }
 
