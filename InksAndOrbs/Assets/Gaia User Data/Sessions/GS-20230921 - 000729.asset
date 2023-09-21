@@ -1,0 +1,423 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e251860fcd970734c9f14ebd98a146c3, type: 3}
+  m_Name: GS-20230921 - 000729
+  m_EditorClassIdentifier: 
+  m_name: Session 20230921-000729
+  m_description: 'Rocking out at Creativity Central!
+
+
+    If you like Gaia please
+    consider rating it :)'
+  m_previewImage: {fileID: 0}
+  m_dateCreated: 9/21/2023 12:07:29 AM
+  m_terrainWidth: 256
+  m_terrainDepth: 256
+  m_terrainHeight: 256
+  m_seaLevel: 5.5
+  m_spawnDensity: 0.6
+  m_isLocked: 0
+  m_previewImageBytes: 
+  m_previewImageWidth: 0
+  m_previewImageHeight: 0
+  m_operations:
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 9/21/2023 12:07:50 AM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 9/21/2023 12:07:50 AM
+    scriptableObjectAssetGUID: 8ecc8cbc9c3199640ba0f41198699d75
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 9/21/2023 12:08:36 AM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 9/21/2023 12:08:36 AM
+    scriptableObjectAssetGUID: 860e74ab15c7e984f8c07fe914347fd5
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Clear World
+    m_operationType: 10
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 9/21/2023 12:09:55 AM
+    scriptableObjectAssetGUID: 
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: 'Creating World: 1 x 1 tiles, tile size: 256'
+    m_operationType: 0
+    m_isActive: 1
+    m_affectedTerrainNames: []
+    m_operationDateTime: 9/21/2023 12:09:55 AM
+    scriptableObjectAssetGUID: 18cfd691f747bac44a982a5f1d1782d4
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 4k Hills 2
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:19:57 AM
+    scriptableObjectAssetGUID: a240ec0ddaa753443b5706cb815779e7
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:19:58 AM
+    scriptableObjectAssetGUID: 03f0ac9baecbdd44181983f5b02d870e
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:20:19 AM
+    scriptableObjectAssetGUID: 02e61a23aeb997f44aabcdf085691fcf
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:20:19 AM
+    scriptableObjectAssetGUID: 15e4299b364b8384ea80954ac652cb26
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:26:20 AM
+    scriptableObjectAssetGUID: f005b2cb2554d5d449c5a64173bc9f91
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:27:19 AM
+    scriptableObjectAssetGUID: 5ccfa3a2a09000d4aa98c657b8ee0799
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:27:19 AM
+    scriptableObjectAssetGUID: 26c2cfb8445225d4f936aed243d06e19
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:34:24 AM
+    scriptableObjectAssetGUID: 7e47d0425af236a46a7cd7fd53c8f5aa
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:34:45 AM
+    scriptableObjectAssetGUID: dd150be3dda3aba4c935ee779bb1e728
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:34:45 AM
+    scriptableObjectAssetGUID: a316b392add75b7498966cb3914a364c
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: HydraulicErosion - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:35:00 AM
+    scriptableObjectAssetGUID: d4092da44da61dd45a069c6c302965c3
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 12:35:01 AM
+    scriptableObjectAssetGUID: b7e8352db0351784aba2c515809f8359
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: RaiseHeight - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:30:49 AM
+    scriptableObjectAssetGUID: a3b7e54e395f37844a8f512b2f10e64d
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:30:50 AM
+    scriptableObjectAssetGUID: 6b217eeb505ebbc44a14e8c754728382
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:44:18 AM
+    scriptableObjectAssetGUID: d2c45fdadc6f5da43b0a14901e53ba76
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:46:07 AM
+    scriptableObjectAssetGUID: 28bb305ba48183e4395c212de1129ec6
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:46:08 AM
+    scriptableObjectAssetGUID: 914b8613bcff9f2479cc9cf95e751e8d
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: SetHeight - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:46:25 AM
+    scriptableObjectAssetGUID: 9147ad13bae92d740b312fbb3e63ce35
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:46:25 AM
+    scriptableObjectAssetGUID: 37786e095e3181142947df31f0243d04
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Undo - 1 Terrains
+    m_operationType: 5
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:46:28 AM
+    scriptableObjectAssetGUID: 8b490fb93c8a5f947aa3b229c9e49cd0
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Contrast - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:46:50 AM
+    scriptableObjectAssetGUID: ef23ae1a394c17b4bb079eabc1f1e44b
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:46:51 AM
+    scriptableObjectAssetGUID: 95364ef999dca40478c65cd64daab3c7
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:47:01 AM
+    scriptableObjectAssetGUID: d62e5b7dd0a770a469e1e91ac7458f1b
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:47:02 AM
+    scriptableObjectAssetGUID: 641dd0734a8be6d46b7705ff16277088
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:52:34 AM
+    scriptableObjectAssetGUID: 987705e86fce91c43a6d20c489d4655a
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:52:34 AM
+    scriptableObjectAssetGUID: 22b7c8f1c341662498b09cadf4b79678
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Smooth - 4k Hills 3
+    m_operationType: 4
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:52:44 AM
+    scriptableObjectAssetGUID: e8dd32e5141aada4197e975d2cc4f2c7
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  - m_description: Spawning - Synty Texture Spawner(Clone)
+    m_operationType: 7
+    m_isActive: 1
+    m_affectedTerrainNames:
+    - Terrain_0_0-20230921 - 000955
+    m_operationDateTime: 9/21/2023 11:52:44 AM
+    scriptableObjectAssetGUID: 608256e172c65764195f7958a0f4df70
+    m_isFoldedOut: 0
+    sessionPlaybackState: 1
+    m_terrainsFoldedOut: 0
+    m_serializedExternalAction: 
+  m_terrainMinMaxCache:
+  - guid: 5481a8bc7eebdcc41bd404160a693fce
+    isWorldmap: 0
+    recalculate: 0
+    min: 0
+    max: 30.500465
+  - guid: 67db8f339ae09f84aa4c77525903a49e
+    isWorldmap: 0
+    recalculate: 0
+    min: 10.461097
+    max: 78.57932
+  - guid: 9e2f92d0e9ec304469f629c02d56431a
+    isWorldmap: 0
+    recalculate: 0
+    min: 7.0704203
+    max: 45.867886
+  - guid: Worldmap
+    isWorldmap: 1
+    recalculate: 0
+    min: 0
+    max: 0
+  m_bakedMaskCacheEntries: []
+  m_worldBiomeMaskSettings: {fileID: 0}

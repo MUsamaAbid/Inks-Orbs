@@ -138,7 +138,7 @@ namespace OcularInk.Characters.Protagonist
 
 #endif
 
-            _targetPos.y = Mathf.Clamp(_targetPos.y, -1f, 8f);
+            _targetPos.y = Mathf.Clamp(_targetPos.y, -1f, 10f);
 
             transform.position = _targetPos;
         }
