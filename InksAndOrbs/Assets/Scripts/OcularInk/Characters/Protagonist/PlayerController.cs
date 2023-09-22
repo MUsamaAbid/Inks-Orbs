@@ -199,6 +199,7 @@ namespace OcularInk.Characters.Protagonist
 
         private void OnCollisionEnter(Collision collision)
         {
+            Debug.Log("Collided with: " + collision.gameObject.name);
             if (collision.collider.CompareTag("Health"))
             {
                 
