@@ -2080,17 +2080,17 @@ PrefabInstance:
     - target: {fileID: 7053700410019394737, guid: da18de754fda99e4fada6239ee4dcb89,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -56.1
+      value: -49.8
       objectReference: {fileID: 0}
     - target: {fileID: 7053700410019394737, guid: da18de754fda99e4fada6239ee4dcb89,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.7
+      value: 14.38
       objectReference: {fileID: 0}
     - target: {fileID: 7053700410019394737, guid: da18de754fda99e4fada6239ee4dcb89,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.7
+      value: -3.3
       objectReference: {fileID: 0}
     - target: {fileID: 7053700410019394737, guid: da18de754fda99e4fada6239ee4dcb89,
         type: 3}
@@ -20392,7 +20392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2046402195
 Transform:
   m_ObjectHideFlags: 0
@@ -21674,7 +21674,7 @@ PrefabInstance:
     - target: {fileID: 1659959117477631740, guid: 5cb465b6f08ba4a4ba1df4a993a2cdb2,
         type: 3}
       propertyPath: m_ColorTemperature
-      value: 4401
+      value: 4190
       objectReference: {fileID: 0}
     - target: {fileID: 1659959117477631741, guid: 5cb465b6f08ba4a4ba1df4a993a2cdb2,
         type: 3}
@@ -22665,7 +22665,7 @@ PrefabInstance:
     - target: {fileID: 7053700410019394737, guid: da18de754fda99e4fada6239ee4dcb89,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.3
+      value: 16.25
       objectReference: {fileID: 0}
     - target: {fileID: 7053700410019394737, guid: da18de754fda99e4fada6239ee4dcb89,
         type: 3}
