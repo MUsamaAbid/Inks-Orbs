@@ -102,7 +102,7 @@ public class HomeCanvas : CanvasController
         GameManager.GameData.NoAds = true;
         removeAdsButton.SetActive(false);
         DataManager.Save();
-        AdmobService.instance.HideBanner();
+        //AdmobService.instance.HideBanner(); usama
     }
 
     public void PurchaseFailed()

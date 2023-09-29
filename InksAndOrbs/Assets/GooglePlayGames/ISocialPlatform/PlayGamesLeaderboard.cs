@@ -115,7 +115,7 @@ namespace GooglePlayGames
         {
             if (data.Valid)
             {
-                OurUtils.Logger.d("Setting leaderboard from: " + data);
+                Debug.Log("Setting leaderboard from: " + data);
                 SetMaxRange(data.ApproximateCount);
                 SetTitle(data.Title);
                 SetLocalUserScore((PlayGamesScore) data.PlayerScore);
@@ -157,10 +157,11 @@ namespace GooglePlayGames
                 {
                     if (fid.Equals(score.userID))
                     {
-                        mScoreList.Add(score);
-                        break;
+                        return mScoreList.Count;
                     }
                 }
+
+                mScoreList.Add(score);
             }
 
             return mScoreList.Count;

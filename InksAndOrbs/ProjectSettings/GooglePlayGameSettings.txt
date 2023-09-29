@@ -1,5 +1,5 @@
-lastUpgrade=01014
-proj.pluginVersion=0.10.14
+lastUpgrade=01010
+proj.pluginVersion=0.10.10
 proj.AppId=147975183536
 and.BundleId=com.inkandorbs.productions
 proj.classDir=Assets

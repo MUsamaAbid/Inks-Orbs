@@ -49,13 +49,13 @@ public class FinishCanvas : CanvasController
             yield break;
         }
 
-        AdmobService.instance.ShowRewardedInterstitial((reward) =>
+        /*AdmobService.instance.ShowRewardedInterstitial((reward) =>
         {
             AlertManager.Instance.ShowSingleAlert("SUCCESS", "You've earned 5 coins!");
             
             GameManager.GameData.Money += 5;
             DataManager.Save();
-        });
+        });*///usama
         
         rewardedInterstitialModal.Hide();
     }

@@ -134,14 +134,14 @@ public class GameController : MonoBehaviour
         
         UserManager.Instance.SaveScore(Score, GameManager.Instance.LevelController.level);
 
-        if (AdmobService.instance.IsRewIntAvailable)
+        /*if (AdmobService.instance.IsRewIntAvailable)//usama
         {
             finishCanvas.ShowAdModal();
         }
         else
         {
             AdmobService.instance.ShowInterstitial();
-        }
+        }*/
     }
 
     public void GameOver()
@@ -149,7 +149,7 @@ public class GameController : MonoBehaviour
         gameCanvas.Hide();
         UIManager.Instance.GetCanvas<GameOverCanvas>().Show();
         EnemyController.ForceDisable = true;
-        AdmobService.instance.ShowInterstitial();
+        ///AdmobService.instance.ShowInterstitial(); usama
         GameManager.Instance.LevelController.LogGameOver();
     }
 

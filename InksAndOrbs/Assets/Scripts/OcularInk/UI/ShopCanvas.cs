@@ -66,7 +66,7 @@ public class ShopCanvas : CanvasController
 
     public void WatchAd()
     {
-        AdmobService.instance.ShowRewardedAd((value) =>
+        /*AdmobService.instance.ShowRewardedAd((value) =>
         {
             if (value)
             {
@@ -76,7 +76,7 @@ public class ShopCanvas : CanvasController
                 AlertManager.Instance.ShowSingleAlert("SUCCESS", "You earned 100$");
                 UIManager.Instance.GetCanvas<HomeSharedCanvas>().UpdateMoneyLabel();
             }
-        });
+        });*/ //usama
     }
 
     private void UpdateView()
