@@ -33,7 +33,7 @@ namespace OcularInk.Characters.Protagonist
         public static float dist;
 
         public int UITouch { get; private set; } = -1;
-
+        public bool mouse;
         void Start()
         {
             _camera = Camera.main;
@@ -78,49 +78,32 @@ namespace OcularInk.Characters.Protagonist
 
         private void MoveBrush()
         {
-#if false
-            if (Input.GetMouseButtonDown(0))
+            if (mouse)
             {
-                _accumulatedDistance = 0f;
-                brushStartTime = Time.time;
-            }
-#else
-            if (Input.touches.Length > 0)
-            {
-                if (Input.GetTouch(0).phase == TouchPhase.Began)
+                if (Input.GetMouseButtonDown(0))
                 {
+                    _accumulatedDistance = 0f;
                     brushStartTime = Time.time;
                 }
             }
-
-#endif
-
-
-#if false
-
-            var mousePos = Input.mousePosition;
-            var ray = _camera.ScreenPointToRay(mousePos);
-            var layerMask = LayerMask.GetMask("Terrain");
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100, layerMask))
-            {
-                var pos = hit.point;
-
-                if (!EventSystem.current.IsPointerOverGameObject())
-                    _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
-                AddToDistance();
-            }
-#else
-            var touches = Input.touches.Where(t => t.fingerId != UITouch).ToList();
-            if (touches.Count == 0)
-            {
-                _targetPos = transform.position;
-            }
             else
             {
+                if (Input.touches.Length > 0)
+                {
+                    if (Input.GetTouch(0).phase == TouchPhase.Began)
+                    {
+                        brushStartTime = Time.time;
+                    }
+                }
+            }
 
-                var ray = _camera.ScreenPointToRay(touches[0].position);
+
+
+            if (mouse)
+            {
+
+                var mousePos = Input.mousePosition;
+                var ray = _camera.ScreenPointToRay(mousePos);
                 var layerMask = LayerMask.GetMask("Terrain");
                 RaycastHit hit;
 
@@ -128,17 +111,42 @@ namespace OcularInk.Characters.Protagonist
                 {
                     var pos = hit.point;
 
-                    if (!EventSystem.current.IsPointerOverGameObject(touches[0].fingerId))
-                    {
+                    if (!EventSystem.current.IsPointerOverGameObject())
                         _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
-                    }
+                    print(hit.point.y + "jjjjjj");
+                    AddToDistance();
                 }
-                AddToDistance();
             }
+            else
+            {
 
-#endif
+                var touches = Input.touches.Where(t => t.fingerId != UITouch).ToList();
+                if (touches.Count == 0)
+                {
+                    _targetPos = transform.position;
+                }
+                else
+                {
 
-            _targetPos.y = Mathf.Clamp(_targetPos.y, -1f, 10f);
+                    var ray = _camera.ScreenPointToRay(touches[0].position);
+                    var layerMask = LayerMask.GetMask("Terrain");
+                    RaycastHit hit;
+
+                    if (Physics.Raycast(ray, out hit, 100, layerMask))
+                    {
+                        var pos = hit.point;
+
+                        if (!EventSystem.current.IsPointerOverGameObject(touches[0].fingerId))
+                        {
+                            _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
+                        }
+                    }
+                    AddToDistance();
+                }
+
+
+            }
+                _targetPos.y = Mathf.Clamp(_targetPos.y, 22f, 33f);
 
             transform.position = _targetPos;
         }
