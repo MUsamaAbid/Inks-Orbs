@@ -112,8 +112,8 @@ namespace OcularInk.Characters.Protagonist
                     var pos = hit.point;
 
                     if (!EventSystem.current.IsPointerOverGameObject())
-                        _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
-                    print(hit.point.y + "jjjjjj");
+                        _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z+13.25f);
+                    print(hit.point.y + "yyyyy"+pos.x+"xxxxxx"+pos.z+"zzzz");
                     AddToDistance();
                 }
             }
@@ -138,7 +138,7 @@ namespace OcularInk.Characters.Protagonist
 
                         if (!EventSystem.current.IsPointerOverGameObject(touches[0].fingerId))
                         {
-                            _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
+                            _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z+13.25f);
                         }
                     }
                     AddToDistance();
