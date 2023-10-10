@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18292007, g: 0.22861418, b: 0.3068898, a: 1}
+  m_IndirectSpecularColor: {r: 0.18291967, g: 0.2286137, b: 0.30688894, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11659,7 +11659,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1449336881226531729}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1449336881226531730}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1d66f008011be148b82a1c850da2d7b, type: 3}
@@ -13259,6 +13259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1449336879809644298, guid: 6d5b90cb4348c0c4baa44dc13171e56c,
+        type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1449336879809644300, guid: 6d5b90cb4348c0c4baa44dc13171e56c,
         type: 3}
       propertyPath: m_Pivot.x
@@ -13529,8 +13534,27 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 62109670995020861, guid: 6d5b90cb4348c0c4baa44dc13171e56c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6d5b90cb4348c0c4baa44dc13171e56c, type: 3}
+--- !u!1 &1449336881226531730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1449336879809644296, guid: 6d5b90cb4348c0c4baa44dc13171e56c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1449336881226531729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &1449336881226531731
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449336881226531730}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1523242236945963155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14315,6 +14339,11 @@ PrefabInstance:
       objectReference: {fileID: 1430438123}
     - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
         type: 3}
+      propertyPath: cutsceneManager
+      value: 
+      objectReference: {fileID: 233043998}
+    - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
+        type: 3}
       propertyPath: cinematicController
       value: 
       objectReference: {fileID: 894841089}
@@ -14673,7 +14702,7 @@ PrefabInstance:
     - target: {fileID: 5181965780985420546, guid: 16124050013ea234a8d10bb4da832f66,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.97
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16124050013ea234a8d10bb4da832f66, type: 3}

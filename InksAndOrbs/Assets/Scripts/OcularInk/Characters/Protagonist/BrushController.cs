@@ -112,7 +112,7 @@ namespace OcularInk.Characters.Protagonist
                     var pos = hit.point;
 
                     if (!EventSystem.current.IsPointerOverGameObject())
-                        _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z+13.25f);
+                        _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
                     print(hit.point.y + "yyyyy"+pos.x+"xxxxxx"+pos.z+"zzzz");
                     AddToDistance();
                 }
@@ -138,7 +138,7 @@ namespace OcularInk.Characters.Protagonist
 
                         if (!EventSystem.current.IsPointerOverGameObject(touches[0].fingerId))
                         {
-                            _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z+13.25f);
+                            _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
                         }
                     }
                     AddToDistance();
@@ -153,23 +153,24 @@ namespace OcularInk.Characters.Protagonist
 
         private void CalculateVelocity()
         {
-#if UNITY_ANDROID || UNITY_IOS
+            if (mouse == false)
+            {
+                if (Input.touches.Length == 0)
+                    return;
 
-            if (Input.touches.Length == 0)
-                return;
+                var touchPos = Input.GetTouch(0).position;
 
-            var touchPos = Input.GetTouch(0).position;
+                Velocity = (touchPos - (Vector2)_oldPos) / Time.deltaTime;
 
-            Velocity = (touchPos - (Vector2)_oldPos) / Time.deltaTime;
+                _oldPos = touchPos;
+            }
+            else
+            {
+                Velocity = (Input.mousePosition - _oldPos) / Time.deltaTime;
 
-            _oldPos = touchPos;
+                _oldPos = Input.mousePosition;
 
-#else
-            Velocity = (Input.mousePosition - _oldPos) / Time.deltaTime;
-            
-            _oldPos = Input.mousePosition;
-
-#endif
+            }
         }
 
         private void AddToDistance()
@@ -181,29 +182,32 @@ namespace OcularInk.Characters.Protagonist
 
         private void Attack()
         {
-#if true
-            if (Input.touches.Length > 0)
+            if (mouse == false)
             {
-                if (Input.touches.Where(t => t.fingerId != UITouch).ToList().Count == 0)
+                if (Input.touches.Length > 0)
+                {
+                    if (Input.touches.Where(t => t.fingerId != UITouch).ToList().Count == 0)
+                    {
+                        HandleRelease();
+                        return;
+                    }
+                }
+                if (Input.touches.Length == 0)
                 {
                     HandleRelease();
                     return;
                 }
             }
-            if (Input.touches.Length == 0)
-            {
-                HandleRelease();
-                return;
-            }
-#else
+            else
+            { 
 
             if (!Input.GetMouseButton(0))
             {
                 HandleRelease();
                 return;
             }
-#endif
-            animator.SetBool("Attacking", true);
+}
+                animator.SetBool("Attacking", true);
             _isBrushing = true;
 
             // Proc
