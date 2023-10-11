@@ -34,13 +34,13 @@ public class GameController : MonoBehaviour
         Playtime = 0f;
         
         GameManager.SetGameState(GameState.Playing);
-
-        if (GameManager.Instance.LevelController.level == 0 && PlayerPrefs.GetInt("first_cinematic", 0) == 0 )
+        // haseeb changing
+      /*  if (GameManager.Instance.LevelController.level == 0 && PlayerPrefs.GetInt("first_cinematic", 0) == 0 )
         {
             cinematicController.ShowCinematic(1);
             PlayerPrefs.SetInt("first_cinematic", 1);
             
-        }
+        }*/
 
 #if !UNITY_EDITOR
         AdmobService.instance.ShowBanner();

@@ -49,6 +49,7 @@ namespace OcularInk.Characters.Protagonist
 
         void Update()
         {
+            print(GameManager.State);
             if (GameManager.State != GameState.Playing)
                 return;
 
