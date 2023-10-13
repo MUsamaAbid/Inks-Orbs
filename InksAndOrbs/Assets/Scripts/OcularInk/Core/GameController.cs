@@ -18,9 +18,14 @@ public class GameController : MonoBehaviour
     [SerializeField] private CinematicController cinematicController;
     [SerializeField] private ObjectPool brushAreaPool;
     [SerializeField] private CutsceneManager cutsceneManager;
+    public static GameController instance;
+    public GameObject haseebcutscene;
+    public GameObject oldcanvas;
+    public GameObject insobj;
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         Debug.Log("current level: " + GameManager.GameData.CurrentLevel);
         Time.timeScale = 1;
         Application.targetFrameRate = 60;
@@ -35,18 +40,23 @@ public class GameController : MonoBehaviour
         
         GameManager.SetGameState(GameState.Playing);
         // haseeb changing
-      /*  if (GameManager.Instance.LevelController.level == 0 && PlayerPrefs.GetInt("first_cinematic", 0) == 0 )
+        if (GameManager.Instance.LevelController.level == 0 && PlayerPrefs.GetInt("first_cinematic", 0) == 0 )
         {
-            cinematicController.ShowCinematic(1);
+          //  cinematicController.ShowCinematic(1);
             PlayerPrefs.SetInt("first_cinematic", 1);
-            
-        }*/
+             insobj = Instantiate(haseebcutscene);
+            oldcanvas.SetActive(false);
+        }
 
 #if !UNITY_EDITOR
         AdmobService.instance.ShowBanner();
 #endif
     }
-
+    public void destroycutscene()
+    {
+        Destroy(insobj);
+        oldcanvas.SetActive(true);
+    }
     // Update is called once per frame
     void Update()
     {

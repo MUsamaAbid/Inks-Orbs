@@ -3255,7 +3255,7 @@ PlayableDirector:
   - key: {fileID: -2334294009788081409, guid: 142226caa953d2e4e9a2ddadbb5ce3cb, type: 2}
     value: {fileID: 3342906916229583353}
   - key: {fileID: 3147477648123056584, guid: 142226caa953d2e4e9a2ddadbb5ce3cb, type: 2}
-    value: {fileID: 555380543}
+    value: {fileID: 0}
   - key: {fileID: -5969651595137890762, guid: 142226caa953d2e4e9a2ddadbb5ce3cb, type: 2}
     value: {fileID: 1175995953}
   - key: {fileID: 7672997966080253564, guid: 142226caa953d2e4e9a2ddadbb5ce3cb, type: 2}
@@ -4831,18 +4831,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 542672008}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &555380543 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1286172244788162356, guid: b9bd956c24adff445989eb40c002d10a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1286172244495891192}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &584260295
 GameObject:
   m_ObjectHideFlags: 0
@@ -12622,8 +12610,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 522363219859713010, guid: 1edbc534193a108489a233a0b09d4362,
         type: 3}
+      propertyPath: m_text
+      value: 5555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+      objectReference: {fileID: 0}
+    - target: {fileID: 522363219859713010, guid: 1edbc534193a108489a233a0b09d4362,
+        type: 3}
       propertyPath: m_RaycastTarget
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6345097497850384112, guid: 1edbc534193a108489a233a0b09d4362,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 183
       objectReference: {fileID: 0}
     - target: {fileID: 6345097497850384113, guid: 1edbc534193a108489a233a0b09d4362,
         type: 3}
@@ -13145,8 +13143,49 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1286172244788162356, guid: b9bd956c24adff445989eb40c002d10a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b9bd956c24adff445989eb40c002d10a, type: 3}
+--- !u!1 &1286172244495891193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1286172244788162367, guid: b9bd956c24adff445989eb40c002d10a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1286172244495891192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1286172244495891194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286172244495891193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1391167649255738846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13258,6 +13297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1449336879809644296, guid: 6d5b90cb4348c0c4baa44dc13171e56c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1449336879809644298, guid: 6d5b90cb4348c0c4baa44dc13171e56c,
         type: 3}
@@ -14329,9 +14373,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
         type: 3}
+      propertyPath: oldcanvas
+      value: 
+      objectReference: {fileID: 1449336881226531730}
+    - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
+        type: 3}
       propertyPath: gameCanvas
       value: 
       objectReference: {fileID: 1972110494}
+    - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
+        type: 3}
+      propertyPath: haseebcutscene
+      value: 
+      objectReference: {fileID: 4436347799986710525, guid: 422caa2cf3f7c6e418bfe8a0dbb88f1e,
+        type: 3}
     - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
         type: 3}
       propertyPath: GameFinishPoint
