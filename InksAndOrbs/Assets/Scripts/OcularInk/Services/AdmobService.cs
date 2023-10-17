@@ -26,17 +26,17 @@ public class AdmobService : MonoBehaviour
     public string bannerIDIOS = "ca-app-pub-8399662907709420/9777231098";
     public string rewInstIDIOS = "ca-app-pub-8399662907709420/8370448950";
 
-#if UNITY_ANDROID
+//#if UNITY_ANDROID
     private string interstitialID => interstitialIDAndroid;
     private string rewardedVideoID => rewardedVideoIDAndroid;
     private string bannerID => bannerIDAndroid;
     private string rewInstID => rewInstIDAndroid;
-#elif UNITY_IOS
+/*#elif UNITY_IOS
     private string interstitialID => interstitialIDIOS;
     private string rewardedVideoID => rewardedVideoIDIOS;
     private string bannerID => bannerIDIOS;
     private string rewInstID => rewInstIDIOS;
-#endif
+#endif*/
 
     private BannerView bannerView;
 
