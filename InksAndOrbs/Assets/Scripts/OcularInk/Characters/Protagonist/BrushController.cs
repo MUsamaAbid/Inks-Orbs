@@ -34,6 +34,8 @@ namespace OcularInk.Characters.Protagonist
 
         public int UITouch { get; private set; } = -1;
         public bool mouse;
+        public float minvalue;
+            public float maxvalue;
         void Start()
         {
             _camera = Camera.main;
@@ -147,7 +149,7 @@ namespace OcularInk.Characters.Protagonist
 
 
             }
-                _targetPos.y = Mathf.Clamp(_targetPos.y, 22f, 33f);
+                _targetPos.y = Mathf.Clamp(_targetPos.y, minvalue, maxvalue);
 
             transform.position = _targetPos;
         }

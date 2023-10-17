@@ -13073,7 +13073,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: -145.277, z: 0}
 --- !u!95 &1313583104
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13090,7 +13090,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1313583105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41405,7 +41405,7 @@ GameObject:
   m_IsActive: 0
 --- !u!95 &3457770803393329617
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -41422,7 +41422,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &3457770803393329619
 Transform:
   m_ObjectHideFlags: 0
@@ -42088,6 +42088,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638904503006802776, guid: 16124050013ea234a8d10bb4da832f66,
+        type: 3}
+      propertyPath: mouse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638904503006802776, guid: 16124050013ea234a8d10bb4da832f66,
+        type: 3}
+      propertyPath: maxvalue
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638904503006802776, guid: 16124050013ea234a8d10bb4da832f66,
+        type: 3}
+      propertyPath: minvalue
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4638904503006802777, guid: 16124050013ea234a8d10bb4da832f66,
         type: 3}

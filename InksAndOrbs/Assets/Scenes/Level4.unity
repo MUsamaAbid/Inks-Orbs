@@ -8797,7 +8797,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: -145.277, z: 0}
 --- !u!95 &1313583104
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -8814,7 +8814,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1313583105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11448,6 +11448,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertEnvironment
       objectReference: {fileID: 0}
+    - target: {fileID: 1602859946621632974, guid: aac7ddaf57e75284088ac46348ed4c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3115012586492080548, guid: aac7ddaf57e75284088ac46348ed4c0b,
         type: 3}
       propertyPath: m_RootOrder
@@ -11501,6 +11506,16 @@ PrefabInstance:
     - target: {fileID: 3115012586492080548, guid: aac7ddaf57e75284088ac46348ed4c0b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4681143433742329515, guid: aac7ddaf57e75284088ac46348ed4c0b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7721643313529868581, guid: aac7ddaf57e75284088ac46348ed4c0b,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -14619,6 +14634,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4638904503006802776, guid: 16124050013ea234a8d10bb4da832f66,
+        type: 3}
+      propertyPath: mouse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638904503006802776, guid: 16124050013ea234a8d10bb4da832f66,
+        type: 3}
+      propertyPath: maxvalue
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4638904503006802776, guid: 16124050013ea234a8d10bb4da832f66,
+        type: 3}
+      propertyPath: minvalue
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4638904503006802777, guid: 16124050013ea234a8d10bb4da832f66,
         type: 3}
       propertyPath: m_Name
@@ -14900,6 +14930,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338143743512489638, guid: a5bee64ff6c451f43b420faa60e7d6ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a5bee64ff6c451f43b420faa60e7d6ed, type: 3}

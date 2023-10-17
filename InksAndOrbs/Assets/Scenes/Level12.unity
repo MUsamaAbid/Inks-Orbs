@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17669496, g: 0.22117156, b: 0.3034739, a: 1}
+  m_IndirectSpecularColor: {r: 0.17693299, g: 0.22148472, b: 0.30376506, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1015,10 +1015,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesertEnvironment
       objectReference: {fileID: 0}
+    - target: {fileID: 1602859946621632974, guid: aac7ddaf57e75284088ac46348ed4c0b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3115012586492080548, guid: aac7ddaf57e75284088ac46348ed4c0b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 3115012586492080548, guid: aac7ddaf57e75284088ac46348ed4c0b,
         type: 3}
@@ -8209,7 +8214,7 @@ PrefabInstance:
     - target: {fileID: 8672760192658395286, guid: aca0f0a22195e294f9b4dc4cfda00e4e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8672760192658395286, guid: aca0f0a22195e294f9b4dc4cfda00e4e,
         type: 3}
@@ -9840,7 +9845,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &923802679 stripped
 Transform:
@@ -10552,7 +10557,7 @@ PrefabInstance:
     - target: {fileID: 3844395760952727562, guid: c5db55ac8030f4157a3279d9c7db763d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 3844395760952727562, guid: c5db55ac8030f4157a3279d9c7db763d,
         type: 3}
@@ -12107,7 +12112,7 @@ PrefabInstance:
     - target: {fileID: 6345097497850384113, guid: 1edbc534193a108489a233a0b09d4362,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 6345097497850384113, guid: 1edbc534193a108489a233a0b09d4362,
         type: 3}
@@ -14781,7 +14786,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1370793595
 PrefabInstance:
@@ -20064,7 +20069,7 @@ PrefabInstance:
     - target: {fileID: 4379141163646849623, guid: 3be6ecb53373a3b479c16da52f55fb25,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4379141163646849623, guid: 3be6ecb53373a3b479c16da52f55fb25,
         type: 3}
@@ -21164,7 +21169,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1001 &144369803206609206
 PrefabInstance:
