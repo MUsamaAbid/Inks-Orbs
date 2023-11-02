@@ -15,9 +15,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private HealthChangeText hct;
     [SerializeField] private GameCanvas gameCanvas;
     [SerializeField] private GameplayCameraController gameplayCameraController;
-    [SerializeField] private CinematicController cinematicController;
     [SerializeField] private ObjectPool brushAreaPool;
-    [SerializeField] private CutsceneManager cutsceneManager;
     public static GameController instance;
     public GameObject haseebcutscene;
     public GameObject oldcanvas;
