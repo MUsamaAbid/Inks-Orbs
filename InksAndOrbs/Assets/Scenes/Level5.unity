@@ -135,6 +135,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_19
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -478,6 +483,43 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 66004096}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &70359038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 70359039}
+  m_Layer: 0
+  m_Name: bomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &70359039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70359038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 762660108}
+  - {fileID: 798002844}
+  - {fileID: 1621204172}
+  - {fileID: 1693654075}
+  - {fileID: 790959355}
+  - {fileID: 838848565}
+  m_Father: {fileID: 2082920586}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &127430958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
@@ -727,6 +769,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_17
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -885,6 +932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_21
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -1326,6 +1378,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_28
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -1828,17 +1885,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 1374017549}
     m_Modifications:
     - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_Name
       value: PoisonBomb_3
       objectReference: {fileID: 0}
+    - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -2027,17 +2089,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 1374017549}
     m_Modifications:
     - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_Name
       value: PoisonBomb_2
       objectReference: {fileID: 0}
+    - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -2108,6 +2175,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_27
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -2417,7 +2489,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 1374017549}
     m_Modifications:
     - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -2427,7 +2499,7 @@ PrefabInstance:
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -2617,6 +2689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_24
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -2700,7 +2777,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 1374017549}
     m_Modifications:
     - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -2710,7 +2787,7 @@ PrefabInstance:
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -3157,6 +3234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_29
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -3265,7 +3347,7 @@ Transform:
   m_Children:
   - {fileID: 1165270983929618645}
   m_Father: {fileID: 2082920586}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &500417630
 PrefabInstance:
@@ -3387,6 +3469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_25
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -3771,6 +3858,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_23
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -3942,6 +4034,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_13
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -4019,17 +4116,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 1374017549}
     m_Modifications:
     - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_Name
       value: PoisonBomb_6
       objectReference: {fileID: 0}
+    - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -4100,6 +4202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_20
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -4767,6 +4874,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_12
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -4844,12 +4956,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 70359039}
     m_Modifications:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -4906,6 +5018,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomb1_4
       objectReference: {fileID: 0}
+    - target: {fileID: 1865279075295136535, guid: e8eca9a9549fa4646a8207f03a11f1af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eca9a9549fa4646a8207f03a11f1af, type: 3}
 --- !u!4 &790959355 stripped
@@ -4919,17 +5036,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 70359039}
     m_Modifications:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 286.2
+      value: 143
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -4939,7 +5056,7 @@ PrefabInstance:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 267.5
+      value: 199.1
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -5144,12 +5261,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 70359039}
     m_Modifications:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -5205,6 +5322,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb1_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865279075295136535, guid: e8eca9a9549fa4646a8207f03a11f1af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eca9a9549fa4646a8207f03a11f1af, type: 3}
@@ -5270,7 +5392,7 @@ Transform:
   - {fileID: 1455589638}
   - {fileID: 475592639}
   m_Father: {fileID: 2082920586}
-  m_RootOrder: 15
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &856953625
 PrefabInstance:
@@ -5283,6 +5405,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_32
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -5420,7 +5547,7 @@ Transform:
   - {fileID: 1888300788}
   - {fileID: 856953626}
   m_Father: {fileID: 2082920586}
-  m_RootOrder: 14
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &876067385
 GameObject:
@@ -5652,6 +5779,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_15
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -5796,7 +5928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917365693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89, y: 15.4, z: 316}
+  m_LocalPosition: {x: 264, y: 15.4, z: 189.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6148,17 +6280,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 1374017549}
     m_Modifications:
     - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_Name
       value: PoisonBomb_4
       objectReference: {fileID: 0}
+    - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -6874,6 +7011,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_16
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -7936,6 +8078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_22
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -8100,6 +8247,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StarTrap_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 608830736623535437, guid: bba49855ed5f5124d8b93c0cc4526747,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 608830736623535438, guid: bba49855ed5f5124d8b93c0cc4526747,
         type: 3}
@@ -8492,6 +8644,44 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1370233071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1374017548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374017549}
+  m_Layer: 0
+  m_Name: poison bomb
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1374017549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374017548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 391480052}
+  - {fileID: 430239781}
+  - {fileID: 367407798}
+  - {fileID: 320809701}
+  - {fileID: 953196340}
+  - {fileID: 1417348788}
+  - {fileID: 680910168}
+  m_Father: {fileID: 2082920586}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1394282195 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 608830736623535438, guid: bba49855ed5f5124d8b93c0cc4526747,
@@ -8728,17 +8918,22 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 1374017549}
     m_Modifications:
     - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_Name
       value: PoisonBomb_5
       objectReference: {fileID: 0}
+    - target: {fileID: 6212518770736228836, guid: 1cadc910cc6816746b0de95c0ccda567,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6736430960668947294, guid: 1cadc910cc6816746b0de95c0ccda567,
         type: 3}
@@ -8809,6 +9004,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_30
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -9193,6 +9393,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_14
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -9276,6 +9481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_18
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -10047,12 +10257,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 70359039}
     m_Modifications:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -10108,6 +10318,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865279075295136535, guid: e8eca9a9549fa4646a8207f03a11f1af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eca9a9549fa4646a8207f03a11f1af, type: 3}
@@ -10252,12 +10467,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 70359039}
     m_Modifications:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -10313,6 +10528,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb1_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865279075295136535, guid: e8eca9a9549fa4646a8207f03a11f1af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8eca9a9549fa4646a8207f03a11f1af, type: 3}
@@ -10653,7 +10873,7 @@ Transform:
   - {fileID: 1394282195}
   - {fileID: 1321383204}
   m_Father: {fileID: 2082920586}
-  m_RootOrder: 16
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765890322
 GameObject:
@@ -11281,6 +11501,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrabEnemy_31
       objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
       propertyPath: m_RootOrder
@@ -11404,6 +11629,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CrabEnemy_26
+      objectReference: {fileID: 0}
+    - target: {fileID: 850187582919563956, guid: 5d6e86db1113354409a43a88c67a33b7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6886037184497399314, guid: 5d6e86db1113354409a43a88c67a33b7,
         type: 3}
@@ -12189,23 +12419,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 762660108}
-  - {fileID: 391480052}
-  - {fileID: 430239781}
-  - {fileID: 367407798}
-  - {fileID: 320809701}
-  - {fileID: 953196340}
-  - {fileID: 1417348788}
-  - {fileID: 680910168}
-  - {fileID: 798002844}
-  - {fileID: 1621204172}
-  - {fileID: 1693654075}
-  - {fileID: 790959355}
-  - {fileID: 838848565}
   - {fileID: 480440176}
   - {fileID: 871255647}
   - {fileID: 853269416}
   - {fileID: 1759353498}
+  - {fileID: 70359039}
+  - {fileID: 1374017549}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12819,7 +13038,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2082920586}
+    m_TransformParent: {fileID: 70359039}
     m_Modifications:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -12829,7 +13048,7 @@ PrefabInstance:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 159.1
+      value: 79.6
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -12839,7 +13058,7 @@ PrefabInstance:
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 195.9
+      value: 158.4
       objectReference: {fileID: 0}
     - target: {fileID: 1344638687830331821, guid: e8eca9a9549fa4646a8207f03a11f1af,
         type: 3}
@@ -13516,7 +13735,7 @@ PrefabInstance:
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 128.8
       objectReference: {fileID: 0}
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
@@ -13526,12 +13745,12 @@ PrefabInstance:
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 211.5
       objectReference: {fileID: 0}
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
@@ -13541,7 +13760,7 @@ PrefabInstance:
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
@@ -13556,7 +13775,7 @@ PrefabInstance:
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4946676864314646416, guid: da56492a0ed4d2a4380a22be9bf65db8,
         type: 3}
