@@ -142,14 +142,14 @@ public class GameController : MonoBehaviour
         
         UserManager.Instance.SaveScore(Score, GameManager.Instance.LevelController.level);
 
-        if (AdmobService.instance.IsRewIntAvailable)
-        {
-            finishCanvas.ShowAdModal();
-        }
-        else
-        {
+    //    if (AdmobService.instance.IsRewIntAvailable)
+     //   {
+      //      finishCanvas.ShowAdModal();
+      //  }
+       // else
+      //  {
             AdmobService.instance.ShowInterstitial();
-        }
+    //  }
     }
 
     public void GameOver()

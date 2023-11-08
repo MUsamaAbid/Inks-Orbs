@@ -2209,6 +2209,120 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 856197792}
   m_CullTransparentMesh: 1
+--- !u!1001 &881802016
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501526, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501527, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: bannerIDIOS
+      value: ca-app-pub-3940256099942544/6300978111
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501527, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: rewInstIDIOS
+      value: ca-app-pub-3940256099942544/5354046379
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501527, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: bannerIDAndroid
+      value: ca-app-pub-3940256099942544/6300978111
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501527, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: rewInstIDAndroid
+      value: ca-app-pub-3940256099942544/5354046379
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501527, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: interstitialIDIOS
+      value: ca-app-pub-3940256099942544/1033173712
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501527, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: rewardedVideoIDIOS
+      value: ca-app-pub-3940256099942544/5224354917
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501527, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: interstitialIDAndroid
+      value: ca-app-pub-3940256099942544/1033173712
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501527, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: rewardedVideoIDAndroid
+      value: ca-app-pub-3940256099942544/5224354917
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501528, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_Name
+      value: AdmobService test
+      objectReference: {fileID: 0}
+    - target: {fileID: 779048663033501528, guid: fce3e7ed1da4a4940a2384512b0976f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fce3e7ed1da4a4940a2384512b0976f0, type: 3}
 --- !u!1 &895077173
 GameObject:
   m_ObjectHideFlags: 0
@@ -5159,7 +5273,7 @@ PrefabInstance:
     - target: {fileID: 779048663033501528, guid: fce3e7ed1da4a4940a2384512b0976f0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fce3e7ed1da4a4940a2384512b0976f0, type: 3}
@@ -6593,7 +6707,7 @@ PrefabInstance:
     - target: {fileID: 3360506476084149356, guid: 8f8b2fab8d31dec41acd109279ad8f9b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 5628.206
+      value: 0.00048828125
       objectReference: {fileID: 0}
     - target: {fileID: 3442646824964022030, guid: 8f8b2fab8d31dec41acd109279ad8f9b,
         type: 3}
