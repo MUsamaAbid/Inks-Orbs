@@ -415,14 +415,7 @@ namespace GameAnalyticsSDK
 #endif
         }
 
-        public static void SubscribeAdMobImpressions(string adUnitId, GoogleMobileAds.Api.RewardedInterstitialAd rewardedInterstitialAd)
-        {
-#if UNITY_EDITOR
-            Debug.Log("subscribeAdMobImpressions(adUnitId, rewardedInterstitialAd)");
-#elif UNITY_IOS || UNITY_ANDROID
-            subscribeAdMobImpressions(adUnitId, rewardedInterstitialAd);
-#endif
-        }
+       
 #endif
     }
 }

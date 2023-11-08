@@ -9,7 +9,6 @@ public class AdmobService : MonoBehaviour
 {
     private RewardedAd rewardedAd;
     private InterstitialAd interstitialAd;
-    private RewardedInterstitialAd rewardedInterstitialAd;
 
     public static AdmobService instance;
 
@@ -72,7 +71,6 @@ public class AdmobService : MonoBehaviour
         RequestRewardBasedVideo();
         RequestInterstitial();
         RequestBanner();
-        RequestRewardedInterstitialAd();
 
         interstitialAdFrequency.Value = interstitialAdFrequency.BaseValue;
     }
@@ -114,38 +112,7 @@ public class AdmobService : MonoBehaviour
         bannerView.Show();
     }
 
-    public void RequestRewardedInterstitialAd()
-    {
-        // Clean up the old ad before loading a new one.
-        if (rewardedInterstitialAd != null)
-        {
-            rewardedInterstitialAd.Destroy();
-            rewardedInterstitialAd = null;
-        }
-
-        Debug.Log("Loading the rewarded interstitial ad.");
-
-        // create our request used to load the ad.
-        var adRequest = CreateAdRequest();
-
-        // send the request to load the ad.
-        RewardedInterstitialAd.Load(rewInstID, adRequest,
-            (RewardedInterstitialAd ad, LoadAdError error) =>
-            {
-                // if error is not null, the load request failed.
-                if (error != null || ad == null)
-                {
-                    Debug.LogError("rewarded interstitial ad failed to load an ad " +
-                                   "with error : " + error);
-                    return;
-                }
-
-                Debug.Log("Rewarded interstitial ad loaded with response : "
-                          + ad.GetResponseInfo());
-
-                rewardedInterstitialAd = ad;
-            });
-    }
+   
 
     public void HideBanner()
     {
@@ -212,10 +179,7 @@ public class AdmobService : MonoBehaviour
         _showInterstitial();
     }
 
-    public void ShowRewardedInterstitial(Action<Reward> callback)
-    {
-        rewardedInterstitialAd.Show(callback);
-    }
+  
 
     private void _showInterstitial()
     {
@@ -241,7 +205,7 @@ public class AdmobService : MonoBehaviour
         rewardCallback.Invoke(true);
     }
 
-    public bool IsRewIntAvailable => rewardedInterstitialAd.CanShowAd();
+    
 }
 
 [System.Serializable]

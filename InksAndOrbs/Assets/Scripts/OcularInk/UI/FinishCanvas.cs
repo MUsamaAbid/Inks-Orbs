@@ -25,7 +25,6 @@ public class FinishCanvas : CanvasController
 
     public void ShowAdModal()
     {
-        rewardedInterstitialModal.Show();
         StartCoroutine(ShowRewardedInterstitial());
     }
 
@@ -49,20 +48,20 @@ public class FinishCanvas : CanvasController
             yield break;
         }
 
-        AdmobService.instance.ShowRewardedInterstitial((reward) =>
+        AdmobService.instance.ShowRewardedAd((reward) =>
         {
             AlertManager.Instance.ShowSingleAlert("SUCCESS", "You've earned 5 coins!");
             
             GameManager.GameData.Money += 5;
             DataManager.Save();
         });
+       
         
-        rewardedInterstitialModal.Hide();
     }
 
     public void SkipInterstitialRewarded()
     {
-        rewardedInterstitialModal.Hide();
+        
         isSkipped = true;
         StopCoroutine(ShowRewardedInterstitial());
     }
