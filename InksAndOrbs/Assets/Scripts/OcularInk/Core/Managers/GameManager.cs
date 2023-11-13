@@ -19,9 +19,11 @@ public class GameManager : Singleton<GameManager>
     protected override void Awake()
     {
         base.Awake();
+       
         GameData = DataManager.Load();
         if (PlayerPrefs.GetInt("ft") == 0)
         {
+            
             PlayerPrefs.SetInt("ft", 1);
             PlayerPrefs.SetInt("selectedball", 0);
             PlayerPrefs.SetInt("ball0", 1);

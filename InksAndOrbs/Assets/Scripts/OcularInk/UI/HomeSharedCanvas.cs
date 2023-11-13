@@ -24,4 +24,5 @@ public class HomeSharedCanvas : CanvasController
     {
         moneyLabel.text = GameManager.GameData.Money.ToString();
     }
+ 
 }

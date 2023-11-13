@@ -106,6 +106,7 @@ public class GameController : MonoBehaviour
         CollectedMoney += amount;
         
         gameCanvas.SetMoneyLabel((GameManager.GameData.Money + CollectedMoney).ToString());
+        DataManager.Save();
     }
 
     public void UpdateConfineArea(Collider col)
