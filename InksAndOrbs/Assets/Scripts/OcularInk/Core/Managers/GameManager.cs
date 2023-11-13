@@ -20,6 +20,12 @@ public class GameManager : Singleton<GameManager>
     {
         base.Awake();
         GameData = DataManager.Load();
+        if (PlayerPrefs.GetInt("ft") == 0)
+        {
+            PlayerPrefs.SetInt("ft", 1);
+            PlayerPrefs.SetInt("selectedball", 0);
+            PlayerPrefs.SetInt("ball0", 1);
+        }
     }
 
     public static void SetGameState(GameState newState)
