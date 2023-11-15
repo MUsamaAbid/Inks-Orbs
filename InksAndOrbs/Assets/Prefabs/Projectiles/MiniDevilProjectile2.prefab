@@ -4805,6 +4805,7 @@ MonoBehaviour:
   hitParticle: {fileID: 4961661194148980379, guid: 7a207c69728426e48a76600aea63d943,
     type: 3}
   collider: {fileID: 5726201136145750895}
+  autoFire: 0
   isAlly: 0
 --- !u!54 &5726201136145750893
 Rigidbody:
@@ -4834,4 +4835,4 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -2, z: 0}
