@@ -12498,7 +12498,7 @@ PrefabInstance:
     - target: {fileID: 4638904503006802776, guid: 16124050013ea234a8d10bb4da832f66,
         type: 3}
       propertyPath: mouse
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4638904503006802776, guid: 16124050013ea234a8d10bb4da832f66,
         type: 3}

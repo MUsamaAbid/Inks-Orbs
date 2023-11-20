@@ -33,9 +33,7 @@ namespace OcularInk.Characters.Protagonist
         public static float dist;
 
         public int UITouch { get; private set; } = -1;
-        public bool mouse;
-        public float minvalue;
-            public float maxvalue;
+
         void Start()
         {
             _camera = Camera.main;
@@ -51,7 +49,6 @@ namespace OcularInk.Characters.Protagonist
 
         void Update()
         {
-            print(GameManager.State);
             if (GameManager.State != GameState.Playing)
                 return;
 
@@ -81,32 +78,50 @@ namespace OcularInk.Characters.Protagonist
 
         private void MoveBrush()
         {
-            if (mouse)
+#if false
+print("LLLLLLLLLLLLLLLLLL");
+            if (Input.GetMouseButtonDown(0))
             {
-                if (Input.GetMouseButtonDown(0))
+                _accumulatedDistance = 0f;
+                brushStartTime = Time.time;
+            }
+#else
+            if (Input.touches.Length > 0)
+            {
+                if (Input.GetTouch(0).phase == TouchPhase.Began)
                 {
-                    _accumulatedDistance = 0f;
                     brushStartTime = Time.time;
                 }
             }
+
+#endif
+
+
+#if false
+
+            var mousePos = Input.mousePosition;
+            var ray = _camera.ScreenPointToRay(mousePos);
+            var layerMask = LayerMask.GetMask("Terrain");
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100, layerMask))
+            {
+                var pos = hit.point;
+
+                if (!EventSystem.current.IsPointerOverGameObject())
+                    _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
+                AddToDistance();
+            }
+#else
+            var touches = Input.touches.Where(t => t.fingerId != UITouch).ToList();
+            if (touches.Count == 0)
+            {
+                _targetPos = transform.position;
+            }
             else
             {
-                if (Input.touches.Length > 0)
-                {
-                    if (Input.GetTouch(0).phase == TouchPhase.Began)
-                    {
-                        brushStartTime = Time.time;
-                    }
-                }
-            }
 
-
-
-            if (mouse)
-            {
-
-                var mousePos = Input.mousePosition;
-                var ray = _camera.ScreenPointToRay(mousePos);
+                var ray = _camera.ScreenPointToRay(touches[0].position);
                 var layerMask = LayerMask.GetMask("Terrain");
                 RaycastHit hit;
 
@@ -114,66 +129,40 @@ namespace OcularInk.Characters.Protagonist
                 {
                     var pos = hit.point;
 
-                    if (!EventSystem.current.IsPointerOverGameObject())
-                        _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
-                    print(hit.point.y + "yyyyy"+pos.x+"xxxxxx"+pos.z+"zzzz");
-                    AddToDistance();
-                }
-            }
-            else
-            {
-
-                var touches = Input.touches.Where(t => t.fingerId != UITouch).ToList();
-                if (touches.Count == 0)
-                {
-                    _targetPos = transform.position;
-                }
-                else
-                {
-
-                    var ray = _camera.ScreenPointToRay(touches[0].position);
-                    var layerMask = LayerMask.GetMask("Terrain");
-                    RaycastHit hit;
-
-                    if (Physics.Raycast(ray, out hit, 100, layerMask))
+                    if (!EventSystem.current.IsPointerOverGameObject(touches[0].fingerId))
                     {
-                        var pos = hit.point;
-
-                        if (!EventSystem.current.IsPointerOverGameObject(touches[0].fingerId))
-                        {
-                            _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
-                        }
+                        _targetPos = new Vector3(pos.x, hit.point.y + 2.5f, pos.z);
                     }
-                    AddToDistance();
                 }
-
-
+                AddToDistance();
             }
-                _targetPos.y = Mathf.Clamp(_targetPos.y, minvalue, maxvalue);
+
+#endif
+
+        //    _targetPos.y = Mathf.Clamp(_targetPos.y, -1f, 8f);
 
             transform.position = _targetPos;
         }
 
         private void CalculateVelocity()
         {
-            if (mouse == false)
-            {
-                if (Input.touches.Length == 0)
-                    return;
+#if UNITY_ANDROID || UNITY_IOS
 
-                var touchPos = Input.GetTouch(0).position;
+            if (Input.touches.Length == 0)
+                return;
 
-                Velocity = (touchPos - (Vector2)_oldPos) / Time.deltaTime;
+            var touchPos = Input.GetTouch(0).position;
 
-                _oldPos = touchPos;
-            }
-            else
-            {
-                Velocity = (Input.mousePosition - _oldPos) / Time.deltaTime;
+            Velocity = (touchPos - (Vector2)_oldPos) / Time.deltaTime;
 
-                _oldPos = Input.mousePosition;
+            _oldPos = touchPos;
 
-            }
+#else
+            Velocity = (Input.mousePosition - _oldPos) / Time.deltaTime;
+
+            _oldPos = Input.mousePosition;
+
+#endif
         }
 
         private void AddToDistance()
@@ -185,32 +174,29 @@ namespace OcularInk.Characters.Protagonist
 
         private void Attack()
         {
-            if (mouse == false)
+#if true
+            if (Input.touches.Length > 0)
             {
-                if (Input.touches.Length > 0)
-                {
-                    if (Input.touches.Where(t => t.fingerId != UITouch).ToList().Count == 0)
-                    {
-                        HandleRelease();
-                        return;
-                    }
-                }
-                if (Input.touches.Length == 0)
+                if (Input.touches.Where(t => t.fingerId != UITouch).ToList().Count == 0)
                 {
                     HandleRelease();
                     return;
                 }
             }
-            else
-            { 
+            if (Input.touches.Length == 0)
+            {
+                HandleRelease();
+                return;
+            }
+#else
 
             if (!Input.GetMouseButton(0))
             {
                 HandleRelease();
                 return;
             }
-}
-                animator.SetBool("Attacking", true);
+#endif
+            animator.SetBool("Attacking", true);
             _isBrushing = true;
 
             // Proc
