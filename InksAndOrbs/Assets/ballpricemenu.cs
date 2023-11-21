@@ -286,12 +286,12 @@ public class ballpricemenu : MonoBehaviour
     public void purchaseball(int ballno)
     {
         var coins = GameManager.GameData.Money;
-        if (coins < 100)
+        if (coins < 500)
         {
             AlertManager.Instance.ShowSingleAlert("PURCHASE FAILED", "Insufficient balance");
             return;
         }
-        GameManager.GameData.Money -= 100;
+        GameManager.GameData.Money -= 500;
 
         AlertManager.Instance.ShowSingleAlert("SUCCESS", "Purchased superpower successfully!");
         PlayerPrefs.SetInt("ball" + ballno, 1);
@@ -313,7 +313,7 @@ public class ballpricemenu : MonoBehaviour
         selectbuttons[ballno].SetActive(false);
         PlayerPrefs.SetInt("selectedball", ballno);
         DataManager.Save();
-
+        UIManager.Instance.GetCanvas<HomeSharedCanvas>().UpdateMoneyLabel();
     }
     public void selecball(int ballno)
     {

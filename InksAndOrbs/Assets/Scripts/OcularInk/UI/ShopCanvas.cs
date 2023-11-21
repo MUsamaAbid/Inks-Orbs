@@ -14,7 +14,7 @@ public class ShopCanvas : CanvasController
     [SerializeField] private TextMeshProUGUI upgradeCostLabel;
     [SerializeField] private int[] upgradeCosts;
     [SerializeField] private GameObject skillsTab;
-    
+    [SerializeField] private GameObject balls;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +35,7 @@ public class ShopCanvas : CanvasController
 
     public void Back()
     {
+        balls.SetActive(false);
         UIManager.Instance.GetCanvas<HomeCanvas>().Show();
         Hide();
     }

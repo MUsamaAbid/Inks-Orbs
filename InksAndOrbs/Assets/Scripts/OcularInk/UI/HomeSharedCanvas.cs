@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class HomeSharedCanvas : CanvasController
 {
-    [SerializeField] private TextMeshProUGUI moneyLabel;
+    [SerializeField] private Text moneyLabel;
 
     // Start is called before the first frame update
     void Start()

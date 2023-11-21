@@ -101,8 +101,14 @@ public class SnakeBossController : EnemyAI
                 return;
 
             TakeDamage(Mathf.Round(3 + collision.relativeVelocity.magnitude));
-            AudioManager.Instance.PlayAudio("BossGrunt");
+           // AudioManager.Instance.PlayAudio("BossGrunt");
         }
+    }
+    public override void TakeDamage(float damage)
+    {
+        base.TakeDamage(damage);
+
+        AudioManager.Instance.PlayAudio("BossGrunt");
     }
 
     protected override void Die()
