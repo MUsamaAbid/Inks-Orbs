@@ -90,7 +90,7 @@ public class GameData
 
     public void NextLevel()
     {
-        CurrentLevel = Mathf.Clamp(CurrentLevel + 1, 0, 23);
+        CurrentLevel = Mathf.Clamp(CurrentLevel + 1, 0, 25);
     }
 
     public void ConsumeSuperpower(int index)
