@@ -15,7 +15,7 @@ namespace OcularInk.Misc
         // Update is called once per frame
         void Update()
         {
-            transform.LookAt(transform.position + mainCamera.transform.forward);
+         //   transform.LookAt(transform.position + mainCamera.transform.forward);
             // transform.Rotate(0, 180, 0);
         }
     }

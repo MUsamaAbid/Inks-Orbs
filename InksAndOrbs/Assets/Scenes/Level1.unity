@@ -9540,6 +9540,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
         type: 3}
+      propertyPath: hct
+      value: 
+      objectReference: {fileID: 4183822113932078656, guid: 8b9cbb801e94c584994d568943cce337,
+        type: 3}
+    - target: {fileID: 4273965119258296360, guid: d1d02cd85cad6ba498ad08db93117441,
+        type: 3}
       propertyPath: oldcanvas
       value: 
       objectReference: {fileID: 1449336881226531730}
