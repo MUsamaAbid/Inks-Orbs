@@ -7696,6 +7696,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 4681143434173147724, guid: aac7ddaf57e75284088ac46348ed4c0b,
+        type: 3}
+      propertyPath: m_HeightmapPixelError
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4681143434173147760, guid: aac7ddaf57e75284088ac46348ed4c0b,
         type: 3}
       propertyPath: m_TagString
