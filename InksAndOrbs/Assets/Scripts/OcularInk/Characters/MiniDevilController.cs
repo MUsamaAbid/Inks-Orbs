@@ -101,5 +101,19 @@ public class MiniDevilController : EnemyAI
         if(GameManager.GameData.CurrentLevel < 1)
             GameManager.Instance.GameController.SpawnFinishPoint(this.transform.position);
         base.Die();
+        GameManager.Instance.killedbosses++;
+        if (GameManager.Instance.killedbosses >= GameManager.Instance.bossestokill)
+        {
+            GameController.instance.GameFinishPoint.SetActive(true);
+            GameController.instance.GameFinishPointblocker.SetActive(false);
+        }
+    }
+    public void endsound()
+    {
+        AudioManager.Instance.CrossFadeMusic("Forest");
+    }
+    public void attacksound()
+    {
+        AudioManager.Instance.CrossFadeMusic("Forest_Boss");
     }
 }

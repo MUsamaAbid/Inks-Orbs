@@ -198,12 +198,7 @@ namespace OcularInk.Characters
                 onDeath?.Invoke();
 
                 GameManager.Instance.GameController.IncreaseScore((int)initialHealth);
-                GameManager.Instance.killedbosses++;
-                if (GameManager.Instance.killedbosses >= GameManager.Instance.bossestokill)
-                {
-                    GameController.instance.GameFinishPoint.SetActive(true);
-                    GameController.instance.GameFinishPointblocker.SetActive(false);
-                }
+                
                 Destroy(gameObject);
             }
             catch (Exception e)

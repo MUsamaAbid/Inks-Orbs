@@ -12678,6 +12678,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6338143743512489633, guid: a5bee64ff6c451f43b420faa60e7d6ed,
+        type: 3}
+      propertyPath: bossestokill
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6338143743512489638, guid: a5bee64ff6c451f43b420faa60e7d6ed,
         type: 3}
       propertyPath: m_Name

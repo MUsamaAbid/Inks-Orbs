@@ -90,6 +90,21 @@ public class GreenWormController : EnemyAI
     protected override void Die()
     {
         AudioManager.Instance.PlayAudio("BossDying");
+
         base.Die();
+        GameManager.Instance.killedbosses++;
+        if (GameManager.Instance.killedbosses >= GameManager.Instance.bossestokill)
+        {
+            GameController.instance.GameFinishPoint.SetActive(true);
+            GameController.instance.GameFinishPointblocker.SetActive(false);
+        }
+    }
+    public void endsound()
+    {
+        AudioManager.Instance.CrossFadeMusic("Desert");
+    }
+    public void attacksound()
+    {
+        AudioManager.Instance.CrossFadeMusic("Desert_Boss");
     }
 }

@@ -114,5 +114,19 @@ public class IceBossController : EnemyAI
     {
         AudioManager.Instance.PlayAudio("BossDying");
         base.Die();
+        GameManager.Instance.killedbosses++;
+        if (GameManager.Instance.killedbosses >= GameManager.Instance.bossestokill)
+        {
+            GameController.instance.GameFinishPoint.SetActive(true);
+            GameController.instance.GameFinishPointblocker.SetActive(false);
+        }
+    }
+    public void endsound()
+    {
+        AudioManager.Instance.CrossFadeMusic("Snowland");
+    }
+    public void attacksound()
+    {
+        AudioManager.Instance.CrossFadeMusic("Snowland_Boss");
     }
 }

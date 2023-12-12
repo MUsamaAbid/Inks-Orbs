@@ -19389,10 +19389,10 @@ MonoBehaviour:
   onActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameController, OcularInk
-        m_MethodName: SwitchMusic
-        m_Mode: 5
+      - m_Target: {fileID: 4077361628034087888}
+        m_TargetAssemblyTypeName: IceBossController, Assembly-CSharp
+        m_MethodName: attacksound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19416,10 +19416,10 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameController, OcularInk
-        m_MethodName: SwitchMusic
-        m_Mode: 5
+      - m_Target: {fileID: 4077361628034087888}
+        m_TargetAssemblyTypeName: IceBossController, Assembly-CSharp
+        m_MethodName: endsound
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
