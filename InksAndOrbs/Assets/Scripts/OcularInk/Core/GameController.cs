@@ -4,7 +4,7 @@ using OcularInk.Characters;
 using OcularInk.Characters.Protagonist;
 using OcularInk.Misc;
 using UnityEngine;
-using UnityEngine.UI;
+
 public class GameController : MonoBehaviour
 {
     public int CollectedMoney { get; private set; }
@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     public float Playtime { get; private set; }
 
     [SerializeField] private GameObject GameFinishPoint;
-    [SerializeField] private GameObject hct;
+    [SerializeField] private HealthChangeText hct;
     [SerializeField] private GameCanvas gameCanvas;
     [SerializeField] private GameplayCameraController gameplayCameraController;
     [SerializeField] private ObjectPool brushAreaPool;
@@ -81,14 +81,9 @@ public class GameController : MonoBehaviour
 
     public void ShowHealthText(string txt, Vector3 pos)
     {
-     
-
-
-        GameObject text = Instantiate(hct);
-        text.transform.SetParent(gameCanvas.gameObject.transform, false);
-        text.GetComponent<Text>().rectTransform.anchoredPosition = new Vector3(0, 0, 0);
-        text.GetComponent<HealthChangeText>().SetText(txt);
-       // text.Fire();
+        var text = Instantiate(hct, pos, Quaternion.identity);
+        text.SetText(txt);
+        text.Fire();
     }
 
     public void SetHealth(float value)
