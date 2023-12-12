@@ -11,7 +11,8 @@ public class GameController : MonoBehaviour
     public int Score { get; private set; }
     public float Playtime { get; private set; }
 
-    [SerializeField] private GameObject GameFinishPoint;
+     public GameObject GameFinishPoint;
+    public GameObject GameFinishPointblocker;
     [SerializeField] private HealthChangeText hct;
     [SerializeField] private GameCanvas gameCanvas;
     [SerializeField] private GameplayCameraController gameplayCameraController;

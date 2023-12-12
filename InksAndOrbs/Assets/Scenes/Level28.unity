@@ -14316,11 +14316,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530670247}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 480.86444, y: 82.46, z: 373.74268}
-  m_Center: {x: 53.451508, y: 0, z: -49.79889}
+  m_Size: {x: 408.5313, y: 82.46, z: 332.40942}
+  m_Center: {x: 51.72928, y: 0, z: -98.020996}
 --- !u!4 &1530670249
 Transform:
   m_ObjectHideFlags: 0
@@ -19391,7 +19391,7 @@ PrefabInstance:
     - target: {fileID: 1286172244788162354, guid: b9bd956c24adff445989eb40c002d10a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -236.67023
+      value: -246
       objectReference: {fileID: 0}
     - target: {fileID: 1286172244788162354, guid: b9bd956c24adff445989eb40c002d10a,
         type: 3}

@@ -13,9 +13,13 @@ public class GameManager : Singleton<GameManager>
     public LevelController LevelController { get; set; }
 
     public static GameData GameData;
-
+    public int bossestokill;
+    public int killedbosses;
     public static GameState State { get; private set; }
-
+    public void Start()
+    {
+        killedbosses = 0;
+    }
     protected override void Awake()
     {
         base.Awake();
