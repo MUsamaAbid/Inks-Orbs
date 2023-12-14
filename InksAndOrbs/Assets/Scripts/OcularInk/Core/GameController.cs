@@ -138,7 +138,8 @@ public class GameController : MonoBehaviour
         
         EnemyController.ForceDisable = true;
         PlayerController.ForceDisable = true;
-
+        AudioManager.Instance.PlayAudio("gamewin");
+        AudioManager.Instance.ToggleMusic(false);
         var finishCanvas = UIManager.Instance.GetCanvas<FinishCanvas>();
         finishCanvas.Show();
         
