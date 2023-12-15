@@ -68,7 +68,7 @@ public class IceBossController : EnemyAI
         attackTime = Time.time;
         if (Random.value < 0.5f)
         {
-            Attack1();
+            Attack2();
         }
         else
         {
